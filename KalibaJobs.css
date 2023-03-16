@@ -1,0 +1,840 @@
+body{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    animation: animate 30s ease-in-out infinite;
+}
+@keyframes animate{
+    0%,100%{
+        background-image: url("5de9099db9a95121290849.jpg");
+    }
+    25%{
+        background-image: url("3351_d7aff74ec04038efc0022767570ef59d.jpg");
+    }
+    50%{
+        background-image: url("a1cb7c05-27b6-4c53-b367-36d222d7cf03_Jobs.jpg");
+    }
+    75%{
+        background-image: url("shutterstock_80058181-scaled.jpg");
+    }
+    95%{
+        background-image: url("shutterstock_412257712-2.jpg");
+    }
+}
+.bgTransp{
+    background-color: rgba(1, 77, 107,0.4);  
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 200vh;
+}
+/*------------------------------------------------------------HEADER----------------------------------------------------------*/
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+    background: linear-gradient(100deg,orangered,rgb(1, 77, 107),rgb(1, 77, 107));
+}
+header::after{
+    position:absolute;
+    content: '';
+    width: 100%;
+    height: 10%;
+    bottom: 0;
+    left: 0;
+    top: 52px;
+    background: linear-gradient(100deg,orangered,rgb(1, 77, 107),rgb(1, 77, 107));
+    clip-path: polygon(-30% 0,100% 0,100% 100%);
+}
+img{
+    height: 40px;
+    width: 180px;
+}
+.menu{
+    display: none;
+}
+.navbar ul{
+    display: flex;
+    padding: 5px;
+}
+.navbar ul li a{
+    display: block;
+    color:antiquewhite;
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    transition: 0.3s;
+    margin: 0 5px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.navbar ul li a:hover{
+    color: orangered;
+    box-shadow: 0 0 25px 0 rgba(0,0,0,0.5);
+}
+.navbar ul li a.active{
+    color: orangered;
+}
+/*------------------------------------------------------------HEADER----------------------------------------------------------*/
+h1{
+    color: antiquewhite;
+    font-size: 50px;
+    font-family:Arial, Helvetica, sans-serif;
+    position: absolute;
+    width: 55%;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+/*------------------------------------------------------------Search_box----------------------------------------------------------*/
+.search{
+    margin: 360px auto;
+    background: white;
+    height: 30px;
+    width: 220px ;
+    border-radius: 30px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    transition: 0.6s;
+    box-shadow: 0 0 25px 0 rgba(0,0,0,0.5);
+}
+.search:hover {
+    width: 400px;
+    background: linear-gradient(100deg,orangered,rgb(1, 77, 107),rgb(1, 77, 107));
+}
+.search input{
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    transition: 0.5;
+}
+/*------------------------------------------------------------Search_box----------------------------------------------------------*/
+.barincli{
+    background: rgb(1, 77, 107);
+    height: 200px;
+    clip-path: polygon(-30% 0,0 100%,100% 100%);
+    margin-top: -15%;
+}
+.Ville{
+    background: rgb(1, 77, 107);
+    height: 1000px;
+    margin-top: -0.3px;
+}
+h2{
+    font-size: 45px;
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+.ligne{
+    border: 2px solid orangered;
+    width: 12%;
+    margin-left: 640px;
+    border-radius: 50px;
+}
+/*---------------------------------------------------------1e groupe de ville--------------------------------------------------*/
+.villes1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 40px 0;
+}
+.villes1 .card1{
+    position: relative;
+    width: 270px;
+    height: 350px;
+    box-shadow: inset 5px 5px 5px rgba(0,0,0,0.5);
+    box-shadow: inset -5px -5px -5px rgba(255,255,255,0.5);
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+    box-shadow: -5px -5px -5px rgba(255,255,255,0.5);
+    border-radius: 15px;
+    margin: 10px;
+    background: linear-gradient(100deg,rgb(255, 255, 255),rgb(1, 77, 107));
+}
+.villes1 .card1 .box{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    background-color: rgba(191, 63, 16, 0.9);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+.villes1 .card1:hover .box{
+    transform: translateY(-50px);
+    box-shadow: 0 10px 40px rgba(0,0,0,0.7);
+    background-image: url("171960a_hb_a_001.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.villes1 .card1 .box .contenu{
+    padding: 20px;
+    text-align: center;
+}
+.villes1 .card1 .box .contenu h3{
+    font-size: 1.8em;
+    color: white;
+    z-index: 1;
+    transition: 0.5s;
+}
+.villes1 .card1 .box .contenu p{
+    font-size: 1em;
+    color: white;
+    font-weight: 300;
+    z-index: 1;
+    transition: 0.5s;
+}
+.villes1 .card1 .box .contenu a{
+    position: relative;
+    display: inline-block;
+    padding: 8px 20px;
+    background: rgb(1, 77, 107);
+    margin-top: 15px;
+    border-radius: 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+.villes1 .card1:hover .box .contenu a{
+    background: orangered;
+    transition: 0.5s;
+}
+
+
+.villes1 .card2{
+    position: relative;
+    width: 270px;
+    height: 350px;
+    box-shadow: inset 5px 5px 5px rgba(0,0,0,0.5);
+    box-shadow: inset -5px -5px -5px rgba(255,255,255,0.5);
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+    box-shadow: -5px -5px -5px rgba(255,255,255,0.5);
+    border-radius: 15px;
+    margin: 10px;
+    background: linear-gradient(100deg,rgb(255, 255, 255),rgb(1, 77, 107));
+}
+.villes1 .card2 .box{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    background-color: rgba(191, 63, 16, 0.9);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+.villes1 .card2:hover .box{
+    transform: translateY(-50px);
+    box-shadow: 0 10px 40px rgba(0,0,0,0.7);
+    background-image: url("KRIBI-2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.villes1 .card2 .box .contenu{
+    padding: 20px;
+    text-align: center;
+}
+.villes1 .card2 .box .contenu h3{
+    font-size: 1.8em;
+    color: white;
+    z-index: 1;
+    transition: 0.5s;
+}
+.villes1 .card2 .box .contenu p{
+    font-size: 1em;
+    color: white;
+    font-weight: 300;
+    z-index: 1;
+    transition: 0.5s;
+}
+.villes1 .card2 .box .contenu a{
+    position: relative;
+    display: inline-block;
+    padding: 8px 20px;
+    background: rgb(1, 77, 107);
+    margin-top: 15px;
+    border-radius: 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+.villes1 .card2:hover .box .contenu a{
+    background: orangered;
+    transition: 0.5s;
+}
+
+.villes1 .card3{
+    position: relative;
+    width: 270px;
+    height: 350px;
+    box-shadow: inset 5px 5px 5px rgba(0,0,0,0.5);
+    box-shadow: inset -5px -5px -5px rgba(255,255,255,0.5);
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+    box-shadow: -5px -5px -5px rgba(255,255,255,0.5);
+    border-radius: 15px;
+    margin: 10px;
+    background: linear-gradient(100deg,rgb(255, 255, 255),rgb(1, 77, 107));
+}
+.villes1 .card3 .box{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    background-color: rgba(191, 63, 16, 0.9);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+.villes1 .card3:hover .box{
+    transform: translateY(-50px);
+    box-shadow: 0 10px 40px rgba(0,0,0,0.7);
+    background-image: url("Egqv1OYWsAAUvad.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.villes1 .card3 .box .contenu{
+    padding: 20px;
+    text-align: center;
+}
+.villes1 .card3 .box .contenu h3{
+    font-size: 1.8em;
+    color: white;
+    z-index: 1;
+    transition: 0.5s;
+}
+.villes1 .card3 .box .contenu p{
+    font-size: 1em;
+    color: white;
+    font-weight: 300;
+    z-index: 1;
+    transition: 0.5s;
+}
+.villes1 .card3 .box .contenu a{
+    position: relative;
+    display: inline-block;
+    padding: 8px 20px;
+    background: rgb(1, 77, 107);
+    margin-top: 15px;
+    border-radius: 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+.villes1 .card3:hover .box .contenu a{
+    background: orangered;
+    transition: 0.5s;
+}
+
+
+.villes1 .card4{
+    position: relative;
+    width: 270px;
+    height: 350px;
+    box-shadow: inset 5px 5px 5px rgba(0,0,0,0.5);
+    box-shadow: inset -5px -5px -5px rgba(255,255,255,0.5);
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+    box-shadow: -5px -5px -5px rgba(255,255,255,0.5);
+    border-radius: 15px;
+    margin: 10px;
+    background: linear-gradient(100deg,rgb(255, 255, 255),rgb(1, 77, 107));
+}
+.villes1 .card4 .box{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    background-color: rgba(191, 63, 16, 0.9);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+.villes1 .card4:hover .box{
+    transform: translateY(-50px);
+    box-shadow: 0 10px 40px rgba(0,0,0,0.7);
+    background-image: url("amphi-ens-maroua.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.villes1 .card4 .box .contenu{
+    padding: 20px;
+    text-align: center;
+}
+.villes1 .card4 .box .contenu h3{
+    font-size: 1.8em;
+    color: white;
+    z-index: 1;
+    transition: 0.5s;
+}
+.villes1 .card4 .box .contenu p{
+    font-size: 1em;
+    color: white;
+    font-weight: 300;
+    z-index: 1;
+    transition: 0.5s;
+}
+.villes1 .card4 .box .contenu a{
+    position: relative;
+    display: inline-block;
+    padding: 8px 20px;
+    background: rgb(1, 77, 107);
+    margin-top: 15px;
+    border-radius: 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+.villes1 .card4:hover .box .contenu a{
+    background: orangered;
+    transition: 0.5s;
+}
+
+
+
+.villes1 .card5{
+    position: relative;
+    width: 270px;
+    height: 350px;
+    box-shadow: inset 5px 5px 5px rgba(0,0,0,0.5);
+    box-shadow: inset -5px -5px -5px rgba(255,255,255,0.5);
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+    box-shadow: -5px -5px -5px rgba(255,255,255,0.5);
+    border-radius: 15px;
+    margin: 10px;
+    background: linear-gradient(100deg,rgb(255, 255, 255),rgb(1, 77, 107));
+}
+.villes1 .card5 .box{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    background-color: rgba(191, 63, 16, 0.9);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+.villes1 .card5:hover .box{
+    transform: translateY(-50px);
+    box-shadow: 0 10px 40px rgba(0,0,0,0.7);
+    background-image: url("Delegation-Regionale-de-leducation-de-base-de-Gaoua.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.villes1 .card5 .box .contenu{
+    padding: 20px;
+    text-align: center;
+}
+.villes1 .card5 .box .contenu h3{
+    font-size: 1.8em;
+    color: white;
+    z-index: 1;
+    transition: 0.5s;
+}
+.villes1 .card5 .box .contenu p{
+    font-size: 1em;
+    color: white;
+    font-weight: 300;
+    z-index: 1;
+    transition: 0.5s;
+}
+.villes1 .card5 .box .contenu a{
+    position: relative;
+    display: inline-block;
+    padding: 8px 20px;
+    background: rgb(1, 77, 107);
+    margin-top: 15px;
+    border-radius: 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+.villes1 .card5:hover .box .contenu a{
+    background: orangered;
+    transition: 0.5s;
+}
+/*---------------------------------------------------------1e groupe de ville--------------------------------------------------*/
+
+/*---------------------------------------------------------2e groupe de ville--------------------------------------------------*/
+.villes2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 40px 0;
+}
+.villes2 .card6{
+    position: relative;
+    width: 270px;
+    height: 350px;
+    box-shadow: inset 5px 5px 5px rgba(0,0,0,0.5);
+    box-shadow: inset -5px -5px -5px rgba(255,255,255,0.5);
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+    box-shadow: -5px -5px -5px rgba(255,255,255,0.5);
+    border-radius: 15px;
+    margin: 10px;
+    background: linear-gradient(100deg,rgb(255, 255, 255),rgb(1, 77, 107));
+}
+.villes2 .card6 .box{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    background-color: rgba(191, 63, 16, 0.9);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+.villes2 .card6:hover .box{
+    transform: translateY(-50px);
+    box-shadow: 0 10px 40px rgba(0,0,0,0.7);
+    background-image: url("1583447497.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.villes2 .card6 .box .contenu{
+    padding: 20px;
+    text-align: center;
+}
+.villes2 .card6 .box .contenu h3{
+    font-size: 1.8em;
+    color: white;
+    z-index: 1;
+    transition: 0.5s;
+}
+.villes2 .card6 .box .contenu p{
+    font-size: 1em;
+    color: white;
+    font-weight: 300;
+    z-index: 1;
+    transition: 0.5s;
+}
+.villes2 .card6 .box .contenu a{
+    position: relative;
+    display: inline-block;
+    padding: 8px 20px;
+    background: rgb(1, 77, 107);
+    margin-top: 15px;
+    border-radius: 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+.villes2 .card6:hover .box .contenu a{
+    background: orangered;
+    transition: 0.5s;
+}
+
+
+.villes2 .card7{
+    position: relative;
+    width: 270px;
+    height: 350px;
+    box-shadow: inset 5px 5px 5px rgba(0,0,0,0.5);
+    box-shadow: inset -5px -5px -5px rgba(255,255,255,0.5);
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+    box-shadow: -5px -5px -5px rgba(255,255,255,0.5);
+    border-radius: 15px;
+    margin: 10px;
+    background: linear-gradient(100deg,rgb(255, 255, 255),rgb(1, 77, 107));
+}
+.villes2 .card7 .box{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    background-color: rgba(191, 63, 16, 0.9);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+.villes2 .card7:hover .box{
+    transform: translateY(-50px);
+    box-shadow: 0 10px 40px rgba(0,0,0,0.7);
+    background-image: url("biocombustible.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.villes2 .card7 .box .contenu{
+    padding: 20px;
+    text-align: center;
+}
+.villes2 .card7 .box .contenu h3{
+    font-size: 1.8em;
+    color: white;
+    z-index: 1;
+    transition: 0.5s;
+}
+.villes2 .card7 .box .contenu p{
+    font-size: 1em;
+    color: white;
+    font-weight: 300;
+    z-index: 1;
+    transition: 0.5s;
+}
+.villes2 .card7 .box .contenu a{
+    position: relative;
+    display: inline-block;
+    padding: 8px 20px;
+    background: rgb(1, 77, 107);
+    margin-top: 15px;
+    border-radius: 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+.villes2 .card7:hover .box .contenu a{
+    background: orangered;
+    transition: 0.5s;
+}
+
+
+.villes2 .card8{
+    position: relative;
+    width: 270px;
+    height: 350px;
+    box-shadow: inset 5px 5px 5px rgba(0,0,0,0.5);
+    box-shadow: inset -5px -5px -5px rgba(255,255,255,0.5);
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+    box-shadow: -5px -5px -5px rgba(255,255,255,0.5);
+    border-radius: 15px;
+    margin: 10px;
+    background: linear-gradient(100deg,rgb(255, 255, 255),rgb(1, 77, 107));
+}
+.villes2 .card8 .box{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    background-color: rgba(191, 63, 16, 0.9);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+.villes2 .card8:hover .box{
+    transform: translateY(-50px);
+    box-shadow: 0 10px 40px rgba(0,0,0,0.7);
+    background-image: url("sddefault.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.villes2 .card8 .box .contenu{
+    padding: 20px;
+    text-align: center;
+}
+.villes2 .card8 .box .contenu h3{
+    font-size: 1.8em;
+    color: white;
+    z-index: 1;
+    transition: 0.5s;
+}
+.villes2 .card8 .box .contenu p{
+    font-size: 1em;
+    color: white;
+    font-weight: 300;
+    z-index: 1;
+    transition: 0.5s;
+}
+.villes2 .card8 .box .contenu a{
+    position: relative;
+    display: inline-block;
+    padding: 8px 20px;
+    background: rgb(1, 77, 107);
+    margin-top: 15px;
+    border-radius: 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+.villes2 .card8:hover .box .contenu a{
+    background: orangered;
+    transition: 0.5s;
+}
+
+
+
+.villes2 .card9{
+    position: relative;
+    width: 270px;
+    height: 350px;
+    box-shadow: inset 5px 5px 5px rgba(0,0,0,0.5);
+    box-shadow: inset -5px -5px -5px rgba(255,255,255,0.5);
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+    box-shadow: -5px -5px -5px rgba(255,255,255,0.5);
+    border-radius: 15px;
+    margin: 10px;
+    background: linear-gradient(100deg,rgb(255, 255, 255),rgb(1, 77, 107));
+}
+.villes2 .card9 .box{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    background-color: rgba(191, 63, 16, 0.9);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+.villes2 .card9:hover .box{
+    transform: translateY(-50px);
+    box-shadow: 0 10px 40px rgba(0,0,0,0.7);
+    background-image: url("maxresdefault.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.villes2 .card9 .box .contenu{
+    padding: 20px;
+    text-align: center;
+}
+.villes2 .card9 .box .contenu h3{
+    font-size: 1.8em;
+    color: white;
+    z-index: 1;
+    transition: 0.5s;
+}
+.villes2 .card9 .box .contenu p{
+    font-size: 1em;
+    color: white;
+    font-weight: 300;
+    z-index: 1;
+    transition: 0.5s;
+}
+.villes2 .card9 .box .contenu a{
+    position: relative;
+    display: inline-block;
+    padding: 8px 20px;
+    background: rgb(1, 77, 107);
+    margin-top: 15px;
+    border-radius: 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+.villes2 .card9:hover .box .contenu a{
+    background: orangered;
+    transition: 0.5s;
+}
+
+
+.villes2 .card10{
+    position: relative;
+    width: 270px;
+    height: 350px;
+    box-shadow: inset 5px 5px 5px rgba(0,0,0,0.5);
+    box-shadow: inset -5px -5px -5px rgba(255,255,255,0.5);
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+    box-shadow: -5px -5px -5px rgba(255,255,255,0.5);
+    border-radius: 15px;
+    margin: 10px;
+    background: linear-gradient(100deg,rgb(255, 255, 255),rgb(1, 77, 107));
+}
+.villes2 .card10 .box{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    background-color: rgba(191, 63, 16, 0.9);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+.villes2 .card10:hover .box{
+    transform: translateY(-50px);
+    box-shadow: 0 10px 40px rgba(0,0,0,0.7);
+    background-image: url("Hotel-Zingana-Bafoussam.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.villes2 .card10 .box .contenu{
+    padding: 20px;
+    text-align: center;
+}
+.villes2 .card10 .box .contenu h3{
+    font-size: 1.8em;
+    color: white;
+    z-index: 1;
+    transition: 0.5s;
+}
+.villes2 .card10 .box .contenu p{
+    font-size: 1em;
+    color: white;
+    font-weight: 300;
+    z-index: 1;
+    transition: 0.5s;
+}
+.villes2 .card10 .box .contenu a{
+    position: relative;
+    display: inline-block;
+    padding: 8px 20px;
+    background: rgb(1, 77, 107);
+    margin-top: 15px;
+    border-radius: 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+.villes2 .card10:hover .box .contenu a{
+    background: orangered;
+    transition: 0.5s;
+}
+/*---------------------------------------------------------2e groupe de ville--------------------------------------------------*/

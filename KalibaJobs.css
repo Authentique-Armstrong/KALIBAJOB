@@ -143,6 +143,7 @@ h2{
     border-radius: 50px;
 }
 /*---------------------------------------------------------1e groupe de ville--------------------------------------------------*/
+/*YAOUNDE*/
 .villes1{
     display: flex;
     justify-content: center;
@@ -177,23 +178,28 @@ h2{
     transition: 0.5s;
 }
 .villes1 .card1:hover .box{
-    transform: translateY(-50px);
+    transform: translateY(-60px);
     box-shadow: 0 10px 40px rgba(0,0,0,0.7);
     background-image: url("171960a_hb_a_001.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
 }
 .villes1 .card1 .box .contenu{
     padding: 20px;
     text-align: center;
 }
-.villes1 .card1 .box .contenu h3{
+h3{
+    font-family:Arial, Helvetica, sans-serif;
     font-size: 1.8em;
     color: white;
     z-index: 1;
     transition: 0.5s;
+    margin-top: -40px;
 }
-.villes1 .card1 .box .contenu p{
+p{
+    padding: 10px;
+    font-family:Arial, Helvetica, sans-serif;
     font-size: 1em;
     color: white;
     font-weight: 300;
@@ -201,6 +207,7 @@ h2{
     transition: 0.5s;
 }
 .villes1 .card1 .box .contenu a{
+    font-family:Arial, Helvetica, sans-serif;
     position: relative;
     display: inline-block;
     padding: 8px 20px;
@@ -216,8 +223,9 @@ h2{
     background: orangered;
     transition: 0.5s;
 }
+/*YAOUNDE*/
 
-
+/*DOUALA*/
 .villes1 .card2{
     position: relative;
     width: 270px;
@@ -245,30 +253,19 @@ h2{
     transition: 0.5s;
 }
 .villes1 .card2:hover .box{
-    transform: translateY(-50px);
+    transform: translateY(-60px);
     box-shadow: 0 10px 40px rgba(0,0,0,0.7);
     background-image: url("KRIBI-2.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
 }
 .villes1 .card2 .box .contenu{
     padding: 20px;
     text-align: center;
 }
-.villes1 .card2 .box .contenu h3{
-    font-size: 1.8em;
-    color: white;
-    z-index: 1;
-    transition: 0.5s;
-}
-.villes1 .card2 .box .contenu p{
-    font-size: 1em;
-    color: white;
-    font-weight: 300;
-    z-index: 1;
-    transition: 0.5s;
-}
 .villes1 .card2 .box .contenu a{
+    font-family:Arial, Helvetica, sans-serif;
     position: relative;
     display: inline-block;
     padding: 8px 20px;
@@ -284,7 +281,9 @@ h2{
     background: orangered;
     transition: 0.5s;
 }
+/*DOUALA*/
 
+/*NGAOUNDERE*/
 .villes1 .card3{
     position: relative;
     width: 270px;
@@ -312,30 +311,19 @@ h2{
     transition: 0.5s;
 }
 .villes1 .card3:hover .box{
-    transform: translateY(-50px);
+    transform: translateY(-60px);
     box-shadow: 0 10px 40px rgba(0,0,0,0.7);
-    background-image: url("Egqv1OYWsAAUvad.jpg");
+    background-image: url("Mosquee-de-Ngaoundere-au-Cameroun.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
 }
 .villes1 .card3 .box .contenu{
     padding: 20px;
     text-align: center;
 }
-.villes1 .card3 .box .contenu h3{
-    font-size: 1.8em;
-    color: white;
-    z-index: 1;
-    transition: 0.5s;
-}
-.villes1 .card3 .box .contenu p{
-    font-size: 1em;
-    color: white;
-    font-weight: 300;
-    z-index: 1;
-    transition: 0.5s;
-}
 .villes1 .card3 .box .contenu a{
+    font-family:Arial, Helvetica, sans-serif;
     position: relative;
     display: inline-block;
     padding: 8px 20px;
@@ -351,8 +339,9 @@ h2{
     background: orangered;
     transition: 0.5s;
 }
+/*NGAOUNDERE*/
 
-
+/*MAROUA*/
 .villes1 .card4{
     position: relative;
     width: 270px;
@@ -380,30 +369,19 @@ h2{
     transition: 0.5s;
 }
 .villes1 .card4:hover .box{
-    transform: translateY(-50px);
+    transform: translateY(-60px);
     box-shadow: 0 10px 40px rgba(0,0,0,0.7);
     background-image: url("amphi-ens-maroua.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
 }
 .villes1 .card4 .box .contenu{
     padding: 20px;
     text-align: center;
 }
-.villes1 .card4 .box .contenu h3{
-    font-size: 1.8em;
-    color: white;
-    z-index: 1;
-    transition: 0.5s;
-}
-.villes1 .card4 .box .contenu p{
-    font-size: 1em;
-    color: white;
-    font-weight: 300;
-    z-index: 1;
-    transition: 0.5s;
-}
 .villes1 .card4 .box .contenu a{
+    font-family:Arial, Helvetica, sans-serif;
     position: relative;
     display: inline-block;
     padding: 8px 20px;
@@ -419,9 +397,9 @@ h2{
     background: orangered;
     transition: 0.5s;
 }
+/*MAROUA*/
 
-
-
+/*GAROUA*/
 .villes1 .card5{
     position: relative;
     width: 270px;
@@ -449,30 +427,19 @@ h2{
     transition: 0.5s;
 }
 .villes1 .card5:hover .box{
-    transform: translateY(-50px);
+    transform: translateY(-60px);
     box-shadow: 0 10px 40px rgba(0,0,0,0.7);
     background-image: url("Delegation-Regionale-de-leducation-de-base-de-Gaoua.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
 }
 .villes1 .card5 .box .contenu{
     padding: 20px;
     text-align: center;
 }
-.villes1 .card5 .box .contenu h3{
-    font-size: 1.8em;
-    color: white;
-    z-index: 1;
-    transition: 0.5s;
-}
-.villes1 .card5 .box .contenu p{
-    font-size: 1em;
-    color: white;
-    font-weight: 300;
-    z-index: 1;
-    transition: 0.5s;
-}
 .villes1 .card5 .box .contenu a{
+    font-family:Arial, Helvetica, sans-serif;
     position: relative;
     display: inline-block;
     padding: 8px 20px;
@@ -488,9 +455,11 @@ h2{
     background: orangered;
     transition: 0.5s;
 }
+/*GAROUA*/
 /*---------------------------------------------------------1e groupe de ville--------------------------------------------------*/
 
 /*---------------------------------------------------------2e groupe de ville--------------------------------------------------*/
+/*EBOLOWA*/
 .villes2{
     display: flex;
     justify-content: center;
@@ -525,30 +494,19 @@ h2{
     transition: 0.5s;
 }
 .villes2 .card6:hover .box{
-    transform: translateY(-50px);
+    transform: translateY(-60px);
     box-shadow: 0 10px 40px rgba(0,0,0,0.7);
-    background-image: url("1583447497.jpg");
+    background-image: url("Cathédrale_d'Abang.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
 }
 .villes2 .card6 .box .contenu{
     padding: 20px;
     text-align: center;
 }
-.villes2 .card6 .box .contenu h3{
-    font-size: 1.8em;
-    color: white;
-    z-index: 1;
-    transition: 0.5s;
-}
-.villes2 .card6 .box .contenu p{
-    font-size: 1em;
-    color: white;
-    font-weight: 300;
-    z-index: 1;
-    transition: 0.5s;
-}
 .villes2 .card6 .box .contenu a{
+    font-family:Arial, Helvetica, sans-serif;
     position: relative;
     display: inline-block;
     padding: 8px 20px;
@@ -564,8 +522,9 @@ h2{
     background: orangered;
     transition: 0.5s;
 }
+/*EBOLOWA*/
 
-
+/*BUEA*/
 .villes2 .card7{
     position: relative;
     width: 270px;
@@ -593,30 +552,19 @@ h2{
     transition: 0.5s;
 }
 .villes2 .card7:hover .box{
-    transform: translateY(-50px);
+    transform: translateY(-60px);
     box-shadow: 0 10px 40px rgba(0,0,0,0.7);
-    background-image: url("biocombustible.jpg");
+    background-image: url("P1030146.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
 }
 .villes2 .card7 .box .contenu{
     padding: 20px;
     text-align: center;
 }
-.villes2 .card7 .box .contenu h3{
-    font-size: 1.8em;
-    color: white;
-    z-index: 1;
-    transition: 0.5s;
-}
-.villes2 .card7 .box .contenu p{
-    font-size: 1em;
-    color: white;
-    font-weight: 300;
-    z-index: 1;
-    transition: 0.5s;
-}
 .villes2 .card7 .box .contenu a{
+    font-family:Arial, Helvetica, sans-serif;
     position: relative;
     display: inline-block;
     padding: 8px 20px;
@@ -632,8 +580,9 @@ h2{
     background: orangered;
     transition: 0.5s;
 }
+/*BUEA*/
 
-
+/*BAMENDA*/
 .villes2 .card8{
     position: relative;
     width: 270px;
@@ -661,30 +610,19 @@ h2{
     transition: 0.5s;
 }
 .villes2 .card8:hover .box{
-    transform: translateY(-50px);
+    transform: translateY(-60px);
     box-shadow: 0 10px 40px rgba(0,0,0,0.7);
-    background-image: url("sddefault.jpg");
+    background-image: url("Azam-Hotel-Bamenda-Exterior.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
 }
 .villes2 .card8 .box .contenu{
     padding: 20px;
     text-align: center;
 }
-.villes2 .card8 .box .contenu h3{
-    font-size: 1.8em;
-    color: white;
-    z-index: 1;
-    transition: 0.5s;
-}
-.villes2 .card8 .box .contenu p{
-    font-size: 1em;
-    color: white;
-    font-weight: 300;
-    z-index: 1;
-    transition: 0.5s;
-}
 .villes2 .card8 .box .contenu a{
+    font-family:Arial, Helvetica, sans-serif;
     position: relative;
     display: inline-block;
     padding: 8px 20px;
@@ -700,9 +638,9 @@ h2{
     background: orangered;
     transition: 0.5s;
 }
+/*BAMENDA*/
 
-
-
+/*BERTOUA*/
 .villes2 .card9{
     position: relative;
     width: 270px;
@@ -730,30 +668,19 @@ h2{
     transition: 0.5s;
 }
 .villes2 .card9:hover .box{
-    transform: translateY(-50px);
+    transform: translateY(-60px);
     box-shadow: 0 10px 40px rgba(0,0,0,0.7);
-    background-image: url("maxresdefault.jpg");
+    background-image: url("normal_7c1f2a4.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
 }
 .villes2 .card9 .box .contenu{
     padding: 20px;
     text-align: center;
 }
-.villes2 .card9 .box .contenu h3{
-    font-size: 1.8em;
-    color: white;
-    z-index: 1;
-    transition: 0.5s;
-}
-.villes2 .card9 .box .contenu p{
-    font-size: 1em;
-    color: white;
-    font-weight: 300;
-    z-index: 1;
-    transition: 0.5s;
-}
 .villes2 .card9 .box .contenu a{
+    font-family:Arial, Helvetica, sans-serif;
     position: relative;
     display: inline-block;
     padding: 8px 20px;
@@ -769,8 +696,9 @@ h2{
     background: orangered;
     transition: 0.5s;
 }
+/*BERTOUA*/
 
-
+/*BAFOUSSAM*/
 .villes2 .card10{
     position: relative;
     width: 270px;
@@ -798,30 +726,19 @@ h2{
     transition: 0.5s;
 }
 .villes2 .card10:hover .box{
-    transform: translateY(-50px);
+    transform: translateY(-60px);
     box-shadow: 0 10px 40px rgba(0,0,0,0.7);
-    background-image: url("Hotel-Zingana-Bafoussam.jpg");
+    background-image: url("hotel-zingana21.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
 }
 .villes2 .card10 .box .contenu{
     padding: 20px;
     text-align: center;
 }
-.villes2 .card10 .box .contenu h3{
-    font-size: 1.8em;
-    color: white;
-    z-index: 1;
-    transition: 0.5s;
-}
-.villes2 .card10 .box .contenu p{
-    font-size: 1em;
-    color: white;
-    font-weight: 300;
-    z-index: 1;
-    transition: 0.5s;
-}
 .villes2 .card10 .box .contenu a{
+    font-family:Arial, Helvetica, sans-serif;
     position: relative;
     display: inline-block;
     padding: 8px 20px;
@@ -837,4 +754,5 @@ h2{
     background: orangered;
     transition: 0.5s;
 }
+/*BAFOUSSAM*/
 /*---------------------------------------------------------2e groupe de ville--------------------------------------------------*/
